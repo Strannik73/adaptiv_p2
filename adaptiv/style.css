@@ -293,22 +293,22 @@ body, button {
 
 .new-collection-section {
     position: relative;
-    overflow: hidden; /* скрываем части фонового изображения, выходящие за пределы */
-    padding: 70px 0;  /* отступы, как в остальных секциях */
+    overflow: hidden; 
+    padding: 70px 0;  
 }
 
-/* Псевдоэлемент для фонового изображения */
+
 .new-collection-section::before {
     content: "";
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 1110px; /* на десктопах фон ограничен до ширины контейнера */
+    width: 1110px;
     height: 100%;
     background: url("assets/Group 211.svg") center center no-repeat;
-    background-size: 100%; /* фон уменьшен до 50% */
-    z-index: -1; /* располагаем позади содержимого */
+    background-size: 100%; 
+    z-index: -1; 
 }
 
 .new-collection-header {
@@ -380,7 +380,7 @@ footer {
     margin-bottom: 6px;
 }
 
-/* --- Tablet styles (min-width: 768px) and (max-width: 1439px) --- */
+
 @media (min-width: 768px) and (max-width: 1439px) {
     .container {
         max-width: 690px;
